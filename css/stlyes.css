@@ -127,6 +127,37 @@ main {
   color: var(--text-soft);
 }
 
+.my-websites .business-card img {
+  background-color: rgb(0, 0, 0, 0.35);
+  border-radius: 10%;
+}
+
+.client-websites .business-card img {
+  background-color: rgba(245, 245, 245, 0.35);
+  border-radius: 10%;
+}
+
+.business-link {
+  display: block;
+  margin-top: 0.8rem;
+  text-align: center;
+  color: var(--brand-alt);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 180ms ease;
+}
+
+.business-link:hover:not(.disabled) {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.business-link.disabled {
+  color: var(--text-soft);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .btn {
   display: inline-block;
   margin-top: 0.65rem;
@@ -168,6 +199,13 @@ main {
   height: auto;
 }
 
+.business-card img {
+  display: block;
+  width: min(100%, 300px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .highlight-grid,
 .business-grid,
 .clients-layout {
@@ -198,11 +236,34 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.business-sections {
+  margin-top: 1.4rem;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.business-subsection {
+  background: var(--surface);
+  border: 1px solid var(--edge);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.business-subsection > h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.business-subsection .business-grid {
+  margin-top: 1rem;
+}
+
 .business-card {
   padding: 1rem;
 }
 
 .business-card h2,
+.business-card h3,
 .highlight-grid h2,
 .client-panel h2, 
 .highlight-grid p {
