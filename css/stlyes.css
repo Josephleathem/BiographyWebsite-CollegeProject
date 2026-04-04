@@ -55,6 +55,12 @@ body {
   color: var(--brand);
 }
 
+.brand-mark-image {
+  display: block;
+  width: auto;
+  height: 2rem;
+}
+
 .brand-name {
   font-weight: 700;
   letter-spacing: 0.05em;
