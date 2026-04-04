@@ -138,6 +138,13 @@ main {
   font-weight: 700;
 }
 
+.hero-text .btn {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-logo-card,
 .business-card,
 .client-panel {
@@ -197,7 +204,8 @@ main {
 
 .business-card h2,
 .highlight-grid h2,
-.client-panel h2 {
+.client-panel h2, 
+.highlight-grid p {
   margin: 0.6rem 0 0.5rem;
   text-align: center;
 }
